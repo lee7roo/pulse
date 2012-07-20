@@ -1,0 +1,10 @@
+<link media="all" rel="stylesheet" href="resources/theme/bootstrap/css/bootstrap.min.css" type="text/css" />
+<link media="all" rel="stylesheet" href="resources/theme/bootstrap/css/custom.css?v=1.0" type="text/css" />
+<link media="all" rel="stylesheet" href="resources/theme/default/style/style.css?v=1.0" type="text/css" />
+<script type="text/javascript" language="javascript" src="resources/js/jquery/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/js/slideshow/jquery.slideshow.js?v=1.0" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/amcharts/amcharts.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/theme/bootstrap/js/bootstrap.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/theme/bootstrap/js/bootstrap-tooltip.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/theme/bootstrap/js/bootstrap-popover.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="resources/js/common.js?v=1.0.1" charset="utf-8"></script>

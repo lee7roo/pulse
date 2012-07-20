@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/resources/**" filters="none" />
+		<intercept-url pattern="/" filters="none" />
+		<intercept-url pattern="/login*" filters="none" />
+	
+		<!-- Authentication policy -->
+		<access-denied-handler error-page="/403"/>
+		<form-login login-page="/login" login-processing-url="/login/authenticate"
+			default-target-url="/welcome" authentication-failure-url="/login?login_error=1" />
+		<logout logout-url="/logout" logout-success-url="/welcome"  invalidate-session="true"/>
+	</http>
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="userDetailsService">
+			<password-encoder hash="plaintext"/>
+		</authentication-provider>
+	</authentication-manager>
+	<beans:bean 
+		id="messageSource" 
+		class="org.springframework.context.support.ResourceBundleMessageSource"
+		p:basename="spring/messages"/> 
+		
+</beans:beans>

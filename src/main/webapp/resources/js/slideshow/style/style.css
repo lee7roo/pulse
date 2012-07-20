@@ -1,0 +1,17 @@
+﻿.control {
+  display:block;
+  position:absolute;
+  cursor: pointer;
+  right:2px;
+}
+
+.control ul{
+    padding:0px;
+    margin:0px;
+}
+
+.control li{
+    list-style:none;
+    margin-top:2px;
+}
+

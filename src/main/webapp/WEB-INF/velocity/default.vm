@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+	<title>Pulse运维数据展示系统</title>
+	#parse( "static.vm" )
+</head>
+<body class="custom">
+<!-- 导航 -->
+	#parse( "header.vm" )
+    <!-- 主体 -->
+    <div class="container-fluid main">
+        <div class="row-fluid" id="main-container" >
+            <div class="span3" style="width:250px;margin:0px 0px 0px 5px;">
+                <div id="sidebar-nav" class="well sidebar-nav">
+					#parse( "sidebar.vm" )		
+                </div>
+                <footer>
+			        <p>&copy; Pulse 2012
+			        </p>
+			    </footer>
+            </div>
+            <div class="span9 charts" id="content">
+            </div>
+        </div>
+    </div><!--/.fluid-container-->
+</body>
+</html>

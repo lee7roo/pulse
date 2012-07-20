@@ -1,0 +1,206 @@
+/*
+ *
+ * The best way to wipe IE6 from this planet is to forget it all since the beginning of your every new project.
+ *
+ */
+
+body, p,
+label, input,
+button, select,
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  background-color: #fff;
+  background-image: url(../img/light-grid.png);
+}
+
+body {
+  padding-top: 20px;
+}
+
+[class^="icon-"] {
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+.main {
+    margin-top: 40px;
+    padding-left: 0;
+}
+footer{
+	position:absolute;
+	bottom:5px;
+	left:70px;
+}
+footer p {
+    text-align: center;
+    margin:0px;
+    padding-bottom:10px;
+}
+
+
+/* logo */
+#logo {
+   height: 33px;
+   background: url(../img/logo-sprite.png) no-repeat scroll 0 0 transparent;
+   margin: 0px;
+}
+#logo:focus, #logo:hover {
+   background: url(../img/logo-sprite.png) no-repeat 0 -33px;
+   border: none;
+}
+#logo:focus img, #logo:hover img {
+   visibility: hidden; 
+}
+#logo small {
+    position: relative;
+    top: 27px;
+    padding-left: 108px;
+}
+.brand:hover {
+   text-decoration: none;
+}
+
+
+/* nav */
+.topnav {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: visible;
+}
+.subnav {
+    width: 100%;
+    height: 50px;
+    /*
+    background-color: #F6F6F6;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    */
+    padding: 9px 0 0;
+	background: #F6F6F6;
+	background: -moz-linear-gradient(#F6F6F6,#EAEAEA);
+	background: -webkit-linear-gradient(#F6F6F6,#EAEAEA);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6',endColorstr='#eaeaea')";
+	position: relative;
+	z-index: 10;
+	border-bottom: 1px solid #CACACA;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.4),0 0 10px rgba(0,0,0,0.1);
+}
+
+/* sidebar */
+.well {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 3px #ddd;
+    -moz-box-shadow: 0 0 3px #ddd;
+    box-shadow: 0 0 3px #ddd;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.sidebar-nav {
+    padding: 9px 0;
+    background: #FAFAFA;
+}
+
+#loading {
+	position: absolute;
+	top: 32px;
+	right: 2px;
+	padding: 3px 5px 3px 5px;
+	font-weight: bold;
+	background-color: #FFF1A8;
+	border: 1px solid transparent;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-top-color: #FFF1A8;
+	border-bottom-color: #FFF1A8;
+	z-index: 1009;
+}
+
+body.custom .well{
+    margin-bottom:0px;
+    margin-top:10px;
+}
+
+body.custom .span6,body.custom .span9{
+    margin-left:10px;
+}
+body.custom .container-fluid {
+    padding-right:0px;
+}
+
+body.custom .row-fluid .span6{
+    width:0px;
+}
+
+body.custom .row-fluid .span6_{
+   width:48.5%;
+}
+
+
+.user-info .nav li{
+	float:right;	
+}
+.user-info .nav li a{
+	vertical-align: middle;
+}
+
+[class^="icon-"] {
+	vertical-align: middle;
+	opacity: 0.7;
+}
+
+
+/*****************************/
+.table-bordered {
+	border: 1px solid #DDD;
+	border-collapse: separate;
+	border-left: 0;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #FDFDFD;
+}
+
+.table {
+	width: 100%;
+	margin-bottom:0px;
+}
+
+.form-horizontal .form-btn-center {
+	padding-left: 0px;
+	text-align: center;
+}
+
+.modal-backdrop {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1040;
+background-color: #DEDAC9;
+}
+
+.modal{
+	margin: -150px 0 0 -280px;
+}
+
+
+.form-horizontal .control-group {
+	margin-bottom: 8px;
+}

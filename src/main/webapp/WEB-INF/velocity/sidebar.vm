@@ -1,0 +1,27 @@
+<ul>
+	<li class="first"><a href="javascript:void(0);"><b>共享平台</b></a></li>
+	<li class="grouped">
+		<a href="javascript:void(0);"><i class="icon-eye-open"></i>&nbsp;<b>运维支撑&IT</b></a>
+		<ul class="group">
+    		<li>MOC</li>
+    		<li class="selected" id="controller.php?type=monitor">监控</li>
+		</ul>
+	</li>
+	<li class="grouped">
+		<a href="javascript:void(0);"><i class="icon-globe"></i>&nbsp;<b>技术保障部</b></a>
+		<ul class="group">
+    		<li>应用运维一</li>
+    		<li>应用运维二</li>
+    		<li>应用运维三</li>
+    		<li>应用运维四</li>
+		</ul>
+	</li>
+	<li class="grouped">
+    	<a href="javascript:void(0);"><i class="icon-hdd"></i>&nbsp;<b>基础运维部</b></a>
+    	<ul class="group">
+        	<li>网络</li>
+        	<li>IDC</li>
+        	<li>系统资源管理</li>
+    	</ul>
+	</li>
+</ul>

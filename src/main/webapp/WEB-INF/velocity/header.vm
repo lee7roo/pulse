@@ -1,0 +1,24 @@
+<div class="topnav">
+    <div class="subnav">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span9">
+                    <a class="brand" href="/" title="Pulse">
+                        <div id="logo">
+                            <small>运维数据展示系统</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="span3 user-info">
+                    <ul class="nav nav-pills">
+                        <li><a href="javascript:void(0);"><i class="icon-question-sign"></i> 帮助</a></li>
+                        <li><a href="logout.php?userId="><i class="icon-off"></i> 登出</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-user"></i></a></li>
+                    </ul>
+                    <span id="loading" style="display:none;">Loading...</span>
+                </div>
+            </div>
+            <div id="menu-box"></div>
+        </div>
+    </div>
+</div>

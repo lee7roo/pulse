@@ -1,0 +1,403 @@
+#content {
+
+}
+
+.charts .well {
+	position:relative;
+	min-height: 20px;
+	padding: 0px;
+	margin-left:0px;
+	background-color: #FAFBFD;
+	border: 1px solid #DDDDDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.tab-div {
+	position: absolute;
+	top: 31px;
+	left: 255px;
+}
+
+.tabs {
+    margin:0px;
+    padding:0px;
+}
+
+.tabs li.item{
+    margin:0 2px 0px 0px;
+    list-style:none;
+    float:left;
+    background:url("../images/left.gif") no-repeat left top;
+    padding:0 0 0 9px;
+}
+
+.tabs li.item a {
+    float:left;
+    display:block;
+    background:url("../images/right.gif") no-repeat right top;
+    padding:5px 15px 5px 6px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#765;
+}
+
+/* Commented Backslash Hack
+ hides rule from IE5-Mac \*/
+.tabs li a {float:none;}
+/* End IE5-Mac hack */
+.tabs li a:hover {
+    color:#333;
+}
+.tabs li.current{
+    background-image:url("../images/left_on.gif");
+    border-width:0;
+}
+.tabs li.current a {
+    background-image:url("../images/right_on.gif");
+    color:#333;
+    padding-bottom:5px;
+}
+
+/***************** Dropdown Menu******************/
+.nav li.dropdown{
+    margin:0 2px 0px 0px;
+    list-style:none;
+    float:left;
+    background:url("../images/left.gif") no-repeat left top;
+    padding:0 0 0 9px;
+}
+
+.nav li.dropdown a.dropdown-toggle {
+    float:left;
+    display:block;
+    background:url("../images/right.gif") no-repeat right top;
+    padding:5px 15px 5px 6px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#765;
+}
+.dropdown-menu {
+	min-width: 90px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.nav > li.dropdown.open.active > a:hover {
+color: white;
+background-color: inherit;
+border-color: #999;
+}
+
+.nav > .dropdown.active > a:hover {
+color: inherit;
+cursor: pointer;
+}
+
+.nav-tabs .open .dropdown-toggle, .nav-pills .open .dropdown-toggle, .nav > li.dropdown.open.active > a:hover {
+color: #333;
+background-color: inherit;
+border-color: #999;
+}
+
+/* Commented Backslash Hack
+ hides rule from IE5-Mac \*/
+.nav li a {float:none;}
+/* End IE5-Mac hack */
+.nav li a:hover {
+    color:#333;
+}
+.nav li.current{
+    background-image:url("../images/left_on.gif");
+    border-width:0;
+}
+.nav li.current a.current {
+    background-image:url("../images/right_on.gif");
+    color:#333;
+    padding-bottom:5px;
+}
+
+.user-info li a * {
+	vertical-align:top;
+}
+
+/*********/
+
+.item{
+	position: relative;
+}
+
+.subItem {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 5px 0px 5px;
+	margin: 1px 0 0;
+	list-style: none;
+	background-color: white;
+	border: 1px solid #CCC;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+/****************       Left menu       ***************/
+
+#sidebar-nav {
+	background: #F1F1F1;
+	background-image: -moz-linear-gradient(top,#F1F1F1 0,#ECECEC 100%);
+	background-image: -ms-linear-gradient(top,#F1F1F1 0,#ECECEC 100%);
+	background-image: -o-linear-gradient(top,#F1F1F1 0,#ECECEC 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#F1F1F1),color-stop(100%,#ECECEC));
+	background-image: -webkit-linear-gradient(top,#F1F1F1 0,#ECECEC 100%);
+	background-image: linear-gradient(to bottom,#F1F1F1 0,#ECECEC 100%);
+	color: #999;
+	font-size: 11px;
+	cursor: pointer;
+	-moz-transition: border 0.2s ease;
+	-ms-transition: border 0.2s ease;
+	-o-transition: border 0.2s ease;
+	-webkit-transition: border 0.2s ease;
+	transition: border 0.2s ease;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-top:0px;
+}
+
+#sidebar-nav ul{
+	margin:0px;
+	padding:0px;
+}
+
+#sidebar-nav li{
+	list-style:none;
+	text-align:center;
+}
+
+#sidebar-nav li a{
+	text-decoration: none;
+	font-size:1.1em;
+}
+#sidebar-nav .group{
+	padding:0px 8px 0px 8px;
+}
+
+#sidebar-nav .grouped{
+	text-align:left;
+	padding:4px 0px 4px 2px;
+	margin-top:3px;
+}
+
+#sidebar-nav .grouped a{
+	vertical-align:middle;
+	padding:5px 0px 5px 0px;
+}
+#sidebar-nav .grouped ul{
+	margin-top:6px;
+}
+
+#sidebar-nav .grouped a b{
+	font-size:1.1em;
+	vertical-align:middle;
+}
+
+#sidebar-nav .group li{
+	padding:4px 0px 4px 12px;
+	margin:3px 0;
+	text-align:left;
+	border: 1px solid #CBCBCB;
+	background: #F9F9F9;
+	color: #08C;
+	text-shadow: none;
+	vertical-align: top;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.sidebar-nav li.first a{
+	color:#fff;
+}
+
+.sidebar-nav li.first {
+	padding:8px 0px 8px 0px;
+	text-align:center;
+	background-color: #6891E7;
+	border-color: #0053A6 #0053A6 black;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+	-moz-box-shadow: inset 0 1px 0 rgba(256,256,256,.35);
+	-ms-box-shadow: inset 0 1px 0 rgba(256,256,256,.35);
+	-webkit-box-shadow: inset 0 1px 0 rgba(256,256,256,.35);
+	box-shadow: inset 0 1px 0 rgba(256,256,256,.35);
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ff4495e7,EndColorStr=#ff0053a6);
+	background-image: -moz-linear-gradient(top,#4495E7 0,#0053A6 100%);
+	background-image: -ms-linear-gradient(top,#4495E7 0,#0053A6 100%);
+	background-image: -o-linear-gradient(top,#4495E7 0,#0053A6 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#4495E7),color-stop(100%,#0053A6));
+	background-image: -webkit-linear-gradient(top,#4495E7 0,#0053A6 100%);
+	background-image: linear-gradient(to bottom,#4495E7 0,#0053A6 100%);
+}
+
+#sidebar-nav .group li.selected,#sidebar-nav .group li:hover{
+	border-right:4px solid #C4302B;
+	color:#C4302B;
+	-moz-border-radius: 4px 0px 0px 4px;
+	-webkit-border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+/****************       Left menu   end    ***************/
+
+.page-header {
+	position:relative;
+	background-color: #E6F1F6;
+	padding: 4px 0px 3px 10px;
+	margin:0px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 1px solid whiteSmoke;
+}
+
+h3{
+	font-size:1.15em;
+}
+
+.createBtn{
+	position: absolute;
+	top:3px;
+	right:5px;
+}
+
+.form-horizontal{
+	margin-top:10px;
+}
+textarea{resize:none}
+
+.tool{
+  position: absolute;
+  z-index: 1010;
+  padding: 5px;
+}
+
+.scroll {
+	border: 1px solid #DDDDDD;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.scroll::-webkit-scrollbar {
+	cursor:pointer;
+	background: #B7B7B7;
+	width: 8px;
+	border-radius: 4px;
+	border: 1px solid #B7B7B7;
+	padding: 10px;
+	overflow: hidden;
+}
+.scroll::-webkit-scrollbar-thumb {
+	cursor:pointer;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #B7B7B7;
+}
+
+
+/*   jAlert  style      */
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	color: #000;
+	border-radius: 6px;
+	border: 1px solid #DDDDDD;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	/*border: solid 5px #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;*/
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #F5F5F5;
+	box-shadow: 0 1px 0 #FFFFFF inset;
+	margin-bottom: 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+#popup_content {
+	text-align: center;
+	margin: 0em;
+	background-color: #fff;
+}
+
+#popup_content.alert {
+	border: none;
+}
+
+#popup_content.confirm {
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 8px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #1c628b;
+}
+
+#popup_content.prompt {
+	
+}
+
+#popup_message {
+	text-align: center;
+	padding-left: 20px;
+}
+
+#popup_panel {
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+
+
+
+
+

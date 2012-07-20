@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/spring/applicationContext-*.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>httpMethodFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+	</filter>
+
+	<!-- BUC SSO  -->
+	<filter>
+	   <filter-name>ssoFilter</filter-name>
+	   <filter-class>com.alibaba.buc.sso.client.filter.SSOFilter</filter-class>
+	   <init-param>
+	      <param-name>APP_NAME</param-name>
+	      <param-value>mind</param-value> <!-- ps:修改app_name成在应用接入方的应用名，此应用名会在buc系统上注册-->
+	    </init-param>
+	   <init-param>
+	     <param-name>SSO_CALLBACK_CLASS</param-name>
+	     <param-value>com.ali.moc.common.util.CustomSSOCallback</param-value><!-- ps:0.1.7以上的版本升级时刻使用兼容的DefaultSSOCallback。用户可扩展的ssoCallback 一般都需要用户扩展-->
+	   </init-param>
+	 
+	   <init-param>
+	       <param-name>SSO_SERVER_URL</param-name>
+	       <param-value>https://login-test.alibaba-inc.com</param-value> <!-- 线上应用请使用:  https://login.alibaba-inc.com  -->
+	   </init-param>
+	 
+	   <init-param>
+	       <param-name>EXCLUSIONS</param-name> <!--ps:直接绕过sso filter的requestUri，uri间用半角逗号隔开-->
+	       <param-value>/login.htm,/logout.htm,*/resources/**</param-value>
+	   </init-param>
+	</filter>
+	
+	<!-- 
+	<filter-mapping>
+		<filter-name>ssoFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 -->
+	
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>httpMethodFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				classpath:spring/servlet-context.xml
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/velocity/404.vm</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/velocity/500.vm</location>
+	</error-page>
+	
+	<session-config>
+		<session-timeout>-1</session-timeout>
+	</session-config>
+</web-app>
